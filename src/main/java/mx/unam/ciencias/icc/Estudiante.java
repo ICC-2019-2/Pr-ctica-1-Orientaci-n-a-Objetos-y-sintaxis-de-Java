@@ -127,18 +127,12 @@ public class Estudiante {
      */
     public boolean equals(Estudiante estudiante) {
         // Aquí va su código.
-        if (estudiante == null)
-            return false;
-        if (!this.nombre.equals(estudiante.nombre))
-            return false;
-        if (this.cuenta != (estudiante.cuenta))
-            return false;
-        if (this.promedio != (estudiante.promedio))
-            return false;
-        if (this.edad != (estudiante.edad))
-            return false;
+        if(estudiante == null||
+        !(this.nombre.equals(estudiante.nombre))||
+        this.cuenta != (estudiante.cuenta)||
+        this.promedio != (estudiante.promedio)||
+        this.edad != (estudiante.edad))
+          return false;
         return true;
-            
-        
     }
 }
